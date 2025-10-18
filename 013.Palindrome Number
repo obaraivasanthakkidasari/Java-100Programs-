@@ -1,0 +1,9 @@
+public class Polindrome2 {
+		public static void main(String[] args) {
+			int num=121;
+			if(num/100==num%10)
+				System.out.println("Polindrome");
+			else
+				System.out.println("Not Polindrome");
+}
+}
