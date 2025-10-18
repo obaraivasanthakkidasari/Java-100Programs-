@@ -1,0 +1,22 @@
+
+public class ArmstrongNumberorNot {
+
+	public static void main(String[] args) {
+		int num=370;
+		int originalNum = num;
+		int result =0;
+		int remainder;
+		
+		while(num != 0) {
+			remainder = num%10;
+			result+=remainder*remainder*remainder;
+			num/=10;
+		}
+		if (result == originalNum) {
+			System.out.println("ArmstrongNumber ");
+		}
+		else {
+			System.out.println("Not ArmstrongNumber ");
+		}
+	}
+}
