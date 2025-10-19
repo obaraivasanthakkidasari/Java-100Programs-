@@ -1,0 +1,15 @@
+
+public class AutomorphicNumber {
+	public static void main(String[] args) {
+		int number = 376;
+		int square = number * number;
+		int mod = (int) Math.pow(10,String.valueOf(number).length());
+		
+		if(square % mod == number) {
+			System.out.println("Its an Automorphic Number");
+		}
+		else {
+			System.out.println("Its an Automorphic Number");
+		}
+	}
+}
