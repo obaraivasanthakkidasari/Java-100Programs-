@@ -1,0 +1,10 @@
+public class DecimalToHexaDecimal {
+    public static void main(String[] args) {
+        int num = 2545;
+
+        // Convert decimal number to hexadecimal string
+        String result = Integer.toHexString(num);
+
+        System.out.println(result);
+    }
+}
