@@ -1,0 +1,16 @@
+public class HexaDecimalToDecimalConversion {
+
+	 public static void main(String[] args) {
+	        Scanner scanner = new Scanner(System.in);
+
+	        System.out.print("Enter binary number: ");
+	        String HexaDecimal = scanner.nextLine();
+
+	       
+	        int decimalOutput = Integer.parseInt(HexaDecimal, 16);
+
+	        System.out.println(decimalOutput);
+
+	        scanner.close();
+	    }
+}
