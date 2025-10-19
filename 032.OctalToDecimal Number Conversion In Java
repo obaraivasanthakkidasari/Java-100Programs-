@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class OctalToDecimal {
+	
+	 public static void main(String[] args) {
+	        Scanner scanner = new Scanner(System.in);
+
+	        System.out.print("Enter Octal number: ");
+	        String OctalInput = scanner.nextLine();
+
+	        // Convert binary string to decimal integer using built-in method
+	        int decimalOutput = Integer.parseInt(OctalInput, 8);
+
+	        System.out.println(decimalOutput);
+
+	        scanner.close();
+	    }
+
+}
