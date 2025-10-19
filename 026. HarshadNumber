@@ -1,0 +1,21 @@
+public class HarshadNumber {
+
+	public static void main(String[] args) {
+		  int n = 21;
+	      int p = n;
+	      int sum1 = 0;
+
+	        while (n > 0) {
+	            sum1 += n % 10;
+	            n = n / 10;
+	        }
+
+	        if (p % sum1 == 0) {
+	            System.out.println("Harshad Number");
+	        } else {
+	            System.out.println("Not a Harshad Number");
+	        }
+		
+	}
+
+}
