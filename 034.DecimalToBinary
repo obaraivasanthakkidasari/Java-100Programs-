@@ -1,0 +1,8 @@
+public class DecimalToBinary {
+	    public static void main(String[] args) {
+	        int NUM = 21;
+	        // Convert decimal number to binary string
+	        String RESULT = Integer.toBinaryString(NUM);
+	        System.out.println(RESULT);
+	    }
+	}
