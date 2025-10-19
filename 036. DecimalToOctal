@@ -1,0 +1,11 @@
+public class DecimalToOctal {
+
+    public static void main(String[] args) {
+        int num = 33;
+
+        // Convert decimal number to octal string
+        String result = Integer.toOctalString(num);
+
+        System.out.println(result);
+    }
+}
