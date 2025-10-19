@@ -1,0 +1,14 @@
+public class BinaryToOctal {
+
+    public static void main(String[] args) {
+        String binaryInput = "1010"; // binary for decimal 10
+
+        // Convert binary string to decimal integer
+        int decimalValue = Integer.parseInt(binaryInput, 2);
+
+        // Convert decimal integer to octal string
+        String octalResult = Integer.toOctalString(decimalValue);
+
+        System.out.println("Octal equivalent: " + octalResult);
+    }
+}
