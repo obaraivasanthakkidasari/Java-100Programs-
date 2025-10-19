@@ -1,0 +1,16 @@
+
+
+public class OctalToBinaryConversion {
+
+    public static void main(String[] args) {
+        String octalNumber = "21"; 
+
+        int decimalNumber = Integer.parseInt(octalNumber, 8);
+
+        
+        String binaryResult = Integer.toBinaryString(decimalNumber);
+
+        System.out.println("Octal number: " + octalNumber);
+        System.out.println("Binary equivalent: " + binaryResult);
+    }
+}
