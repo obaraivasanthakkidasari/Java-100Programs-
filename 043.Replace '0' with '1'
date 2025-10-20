@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class ReplaceZeroWithOne {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter Number: ");
+        int val = sc.nextInt();
+
+        String strVal = String.valueOf(val);
+        String replaced = strVal.replace('0', '1');
+
+        System.out.println(replaced);
+
+        sc.close();
+    }
+}
