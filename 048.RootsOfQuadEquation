@@ -1,0 +1,15 @@
+public class QuadraticEquation {
+    public static void main(String[] args) {
+        double a = 1;
+        double b = -2;
+        double c = -15;
+
+        double discriminant = Math.sqrt(b * b - 4 * a * c);
+
+        double x1 = (-b + discriminant) / (2 * a);
+        double x2 = (-b - discriminant) / (2 * a);
+
+        System.out.println(x1);
+        System.out.println(x2);
+    }
+}
