@@ -1,0 +1,29 @@
+import java.util.Scanner;
+public class DigitsInWords {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter a number: ");
+        int num = sc.nextInt();
+
+        // Array of words for digits 0-9
+        String[] words = {"Zero", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine"};
+
+        // Convert number to string to process each digit
+        String numStr = String.valueOf(num);
+        StringBuilder wordList = new StringBuilder();
+
+        for (int i = 0; i < numStr.length(); i++) {
+            int digit = Character.getNumericValue(numStr.charAt(i));
+            wordList.append(words[digit]);
+            if (i != numStr.length() - 1) {
+                wordList.append(" ");
+            }
+        }
+
+        System.out.println("Number in words: " + wordList);
+
+        sc.close();
+    }
+}
