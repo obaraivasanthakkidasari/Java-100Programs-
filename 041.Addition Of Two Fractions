@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class AdditionOfTwoFractions {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter Num1: ");
+        int n1 = sc.nextInt();
+
+        System.out.print("Enter Num2: ");
+        int n2 = sc.nextInt();
+
+        System.out.print("Enter DNUM1: ");
+        int d1 = sc.nextInt();
+
+        System.out.print("Enter DNUM2: ");
+        int d2 = sc.nextInt();
+
+        // Calculate sum of fractions
+        int s = (n1 * d2) + (n2 * d1);
+        int u = d1 * d2;
+
+        // Display the result as decimal
+        System.out.println("Sum = " + ((double)s / u));
+
+        sc.close();
+    }
+}
