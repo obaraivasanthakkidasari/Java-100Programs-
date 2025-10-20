@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class CountNoOfDigitsInNumber {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter a Number: ");
+        int num = sc.nextInt();
+
+        // Make number positive in case it's negative
+        num = Math.abs(num);
+
+        // Convert to string and get its length
+        int numDigits = String.valueOf(num).length();
+
+        System.out.println("Number Of Digits: " + numDigits);
+
+        sc.close();
+    }
+}
