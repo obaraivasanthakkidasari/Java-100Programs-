@@ -1,0 +1,19 @@
+import java.util.Arrays;
+import java.util.Collections;
+
+public class Arraysfirsthalfascendingordersecondhalfdescendingorder {
+    public static void main(String[] args) {
+        Integer[] arr = {5, 2, 8, 1, 3, 9, 7, 4};
+        int n = arr.length;
+        int half = n / 2;
+
+        // Sort first half in ascending order
+        Arrays.sort(arr, 0, half);
+
+        // Sort second half in descending order
+        Arrays.sort(arr, half, n, Collections.reverseOrder());
+
+        // Print original and modified arrays
+        System.out.println("Modified array: " + Arrays.toString(arr));
+    }
+}
