@@ -1,0 +1,17 @@
+public class StringRemoveCharExceptAlphabets {
+
+	public static void main(String[] args) {
+	
+        String str = "Hello@123 World!#";
+        String result = "";
+
+        for (int i = 0; i < str.length(); i++) {
+            char ch = str.charAt(i);
+            if (Character.isLetter(ch)) {  // keeps only letters
+                result += ch;
+            }
+        }
+
+        System.out.println("String after removing non-alphabets: " + result);
+    }
+}
