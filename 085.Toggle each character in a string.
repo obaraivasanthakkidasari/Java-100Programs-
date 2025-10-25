@@ -1,0 +1,19 @@
+public class StringsToggleCharacterString {
+
+	public static void main(String[] args) {
+		String str = "Root";
+        StringBuilder toggled = new StringBuilder();
+
+        for (int i = 0; i < str.length(); i++) {
+            char ch = str.charAt(i);
+            if (Character.isUpperCase(ch)) {
+                toggled.append(Character.toLowerCase(ch));
+            } else {
+                toggled.append(Character.toUpperCase(ch));
+            }
+        }
+
+        System.out.println("String after the characters are toggled: " + toggled);
+	}
+
+}
