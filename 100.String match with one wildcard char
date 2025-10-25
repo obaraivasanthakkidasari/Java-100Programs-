@@ -1,0 +1,15 @@
+public class stringMatchWildChar {
+    public static void main(String[] args) {
+        String str = "hello";
+        String pattern = "he*o";
+
+        // Convert wildcard pattern to a regex
+        String regex = pattern.replace("?", ".").replace("*", ".*");
+
+        if (str.matches(regex)) {
+            System.out.println("Strings match!");
+        } else {
+            System.out.println("Strings do not match!");
+        }
+    }
+}
