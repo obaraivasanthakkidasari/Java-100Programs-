@@ -1,0 +1,20 @@
+
+public class StringFrequency {
+    public static void main(String[] args) {
+        String str = "Yolo Life";
+
+        for (int i = 0; i < str.length(); i++) {
+            char ch = str.charAt(i);
+            int frequency = 0;
+
+            // Count frequency of ch
+            for (int j = 0; j < str.length(); j++) {
+                if (str.charAt(j) == ch) {
+                    frequency++;
+                }
+            }
+
+            System.out.print(ch + ": " + frequency + ", ");
+        }
+    }
+}
