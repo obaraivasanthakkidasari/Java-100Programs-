@@ -1,0 +1,12 @@
+public class StringReplaceWordotherString {
+    public static void main(String[] args) {
+        String s = "Let's Learn Python from Internet";
+        String s1 = "Internet";
+        String s2 = "PrepInsta";
+
+        String x = s.replace(s1, s2);
+
+        System.out.println("Original String : " + s);
+        System.out.println("Modified String : " + x);
+    }
+}
