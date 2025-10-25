@@ -1,0 +1,19 @@
+public class StringsRemovvowels {
+
+	public static void main(String[] args) {
+		String str = "VasanAkki";
+        String vowels = "aeiouAEIOU";
+        String result = "";
+
+        for (int i = 0; i < str.length(); i++) {
+            char ch = str.charAt(i);
+            if (vowels.indexOf(ch) == -1) { // if not a vowel
+                result = result + ch;
+            }
+        }
+
+        System.out.println("\nAfter removing vowels: " + result);
+
+	}
+
+}
