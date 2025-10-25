@@ -1,0 +1,11 @@
+public class StringSubStringReplace {
+    public static void main(String[] args) {
+        String str = "Hello World";
+        
+        // Replace substring "World" with "Java"
+        String replacedStr = str.replace("World", "Java");
+
+        System.out.println("Original String: " + str);
+        System.out.println("After Replacement: " + replacedStr);
+    }
+}
