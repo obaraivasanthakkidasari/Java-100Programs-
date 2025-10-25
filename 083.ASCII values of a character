@@ -1,0 +1,7 @@
+public class ASCIIvalueofacharacter {
+	public static void main(String[] args) {
+		char c= 'A';
+		int ascii=c;
+	     System.out.println("The Ascii value of char" + c + "is: "+ascii);
+	}
+}
