@@ -1,0 +1,11 @@
+
+public class StringRemoveSpace {
+    public static void main(String[] args) {
+        String str = "Vasan Akki";
+        
+        // Remove all spaces
+        str = str.replace(" ", "");
+
+        System.out.println("After removing space string is: " + str);
+    }
+}
