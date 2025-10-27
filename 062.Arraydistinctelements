@@ -1,0 +1,18 @@
+import java.util.HashSet;
+public class Arraydistinctelements {
+
+
+    public static void main(String[] args) {
+        int[] arr = {5, 2, 8, 1, 3, 2, 5, 1, 5};
+
+        // Using HashSet to store distinct elements
+        HashSet<Integer> distinct = new HashSet<>();
+
+        for (int num : arr) {
+            distinct.add(num);
+        }
+
+        System.out.println("Distinct elements in array: " + distinct);
+        System.out.println("Number of distinct elements: " + distinct.size());
+    }
+}
